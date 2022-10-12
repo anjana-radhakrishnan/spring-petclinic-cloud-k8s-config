@@ -20,7 +20,7 @@ spec:
         app: vets-service
     spec:
       containers:
-      - image: 781862615829.dkr.ecr.us-east-1.amazonaws.com/spring-petclinic-cloud-vets-service:e7042ea45b5486d24efa789c2a67c798c7dbe4ba
+      - image: 781862615829.dkr.ecr.us-east-1.amazonaws.com/spring-petclinic-cloud-vets-service:f0932a7d573a3dcdb3f78b6d93c364c4be50330b
         name: vets-service
         imagePullPolicy: Always
         livenessProbe:
