@@ -20,7 +20,7 @@ spec:
         app: api-gateway
     spec:
       containers:
-      - image: 781862615829.dkr.ecr.us-east-1.amazonaws.com/spring-petclinic-cloud-api-gateway:f0932a7d573a3dcdb3f78b6d93c364c4be50330b
+      - image: 781862615829.dkr.ecr.us-east-1.amazonaws.com/spring-petclinic-cloud-api-gateway:7e3f4fac7696b7c174081d101405f4164999b6db
         name: api-gateway
         imagePullPolicy: Always
         livenessProbe:
