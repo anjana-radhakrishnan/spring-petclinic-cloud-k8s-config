@@ -23,17 +23,17 @@ spec:
       - image: 781862615829.dkr.ecr.us-east-1.amazonaws.com/spring-petclinic-cloud-vets-service:03b75489252d82eff35d155031b3692cc23dbb2c
         name: vets-service
         imagePullPolicy: Always
-        livenessProbe:
-          httpGet:
-            port: 8080
-            path: /actuator/health/liveness
-          initialDelaySeconds: 90
-          periodSeconds: 5
-        readinessProbe:
-          httpGet:
-            port: 8080
-            path: /actuator/health/readiness
-          initialDelaySeconds: 15
+#         livenessProbe:
+#           httpGet:
+#             port: 8080
+#             path: /actuator/health/liveness
+#           initialDelaySeconds: 90
+#           periodSeconds: 5
+#         readinessProbe:
+#           httpGet:
+#             port: 8080
+#             path: /actuator/health/readiness
+#           initialDelaySeconds: 15
         lifecycle:
           preStop:
             exec:
