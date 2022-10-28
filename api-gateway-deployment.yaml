@@ -38,13 +38,13 @@ spec:
           preStop:
             exec:
               command: ["sh", "-c", "sleep 10"]
-        resources:
-          limits:
-            cpu: 2000m
-            memory: 2Gi
-          requests:
-            cpu: 500m
-            memory: 500Mi
+#         resources:
+#           limits:
+#             cpu: 2000m
+#             memory: 2Gi
+#           requests:
+#             cpu: 500m
+#             memory: 500Mi
         env:
         - name: SPRING_PROFILES_ACTIVE
           value: kubernetes
